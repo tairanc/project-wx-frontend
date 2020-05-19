@@ -1,0 +1,161 @@
+@import '../../../scss/mixin.scss';
+
+[data-page~=question-naire] {
+    background: #ffffff;
+    input {
+        outline: none;
+        -webkit-appearance: none;
+    }
+    .question-naire-title-wraper {
+        padding: rem(50) rem(30);
+    }
+    .question-naire-title {
+        font-size: rem(48);
+        color: #1ea0fa;
+        text-align: center;
+        margin-bottom: rem(50);
+    }
+    .question-naire-content {
+        font-size: rem(28);
+        line-height: rem(46);
+        .thank {
+            //padding-left: rem(60);
+        }
+    }
+    .question-naire-wraper {
+        background-color: #f2f2f2;
+        width: 100%;
+        padding-top: rem(20);
+    }
+    .each-one {
+        background-color: #ffffff;
+        padding: rem(25) rem(30);
+        margin-bottom: rem(20);
+        .title {
+            font-size: rem(32);
+            font-weight: bold;
+            min-height: rem(50);
+            line-height: rem(50);
+            margin: rem(15) 0;
+            padding-left: rem(25);
+            position: relative;
+            span {
+                font-size: rem(34);
+            }
+            .star {
+                position: absolute;
+                left: 0;
+            }
+        }
+        .answer-title {
+            font-size: rem(32);
+            font-weight: bold;
+            padding-left: rem(25);
+        }
+        .option {
+            min-height: rem(50);
+            line-height: rem(50);
+            margin: rem(15) 0;
+            padding-left: rem(58);
+            font-size: rem(32);
+            .color-input {
+                opacity: 0;
+                width: 65%;
+                height: rem(60);
+                position: absolute;
+            }
+            .color-input + label {
+                display: inline-block;
+                width: rem(40);
+                height: rem(40);
+                line-height: rem(40);
+                cursor: pointer;
+                //vertical-align: middle;
+                vertical-align: rem(-10);
+                margin-right: rem(20);
+                margin-left: rem(-32);
+                border: 1px solid #e0e0e0;
+            }
+            .color-input-radio + label {
+                border-radius: rem(40);
+            }
+            .color-input-radio:checked + label {
+                border: rem(10) solid #1ba0fb;
+            }
+            .color-input-checkbox + label {
+                border-radius: 2px;
+            }
+            .color-input-checkbox:checked + label {
+                background: url("/src/img/activity/questionnaire/choosed.png");
+                background-size: 100%;
+            }
+            .color-input-checkbox:checked + label::before {
+                /*display: table;
+                content: "\2714";
+                text-align: center;
+                font-size: rem(32);
+                color: #ffffff;
+                background-color: #1ba0fb;
+                width: 101%;*/
+            }
+            .custom {
+                margin-left: rem(30);
+                input {
+                    display: block;
+                    height: rem(60);
+                    line-height: rem(60);
+                    border: 1px solid #e0e0e0;
+                    width: 100%;
+                }
+
+            }
+        }
+        .phone-input-wraper {
+            margin: rem(20) 0 0 rem(16);
+        }
+        .phone-input {
+            display: block;
+            height: rem(60);
+            line-height: rem(60);
+            border: 1px solid #e0e0e0;
+            width: 100%;
+            margin-bottom: rem(20);
+        }
+        .button {
+            width: 100%;
+            height: rem(90);
+            text-align: center;
+            background: #009cff;
+            color: #ffffff;
+            font-size: rem(32);
+            font-weight: bold;
+            border-radius: rem(8);
+            margin-top: rem(35);
+        }
+        .error-tip {
+            width: 100%;
+            height: rem(60);
+            line-height: rem(60);
+            padding-left: rem(20);
+            color: #e9401e;
+            font-size: rem(28);
+            font-weight: 500;
+            background: #ffe5e5;
+            border-radius: rem(8);
+        }
+    }
+    .trc-img {
+        text-align: center;
+        padding-bottom: rem(50);
+        img {
+            width: rem(370);
+        }
+    }
+    .guide-leade {
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

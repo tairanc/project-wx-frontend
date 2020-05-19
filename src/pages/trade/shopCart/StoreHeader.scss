@@ -1,0 +1,109 @@
+@import "../../../scss/mixin.scss";
+
+:local{
+	.storeHeader{
+		height:40px;
+		border-bottom:1px solid #f4f4f4;
+		line-height:39px;
+		font-size:13px;
+		@include flexBox;
+		text-align:center;
+	}
+	.checkbox{
+		width:45px;
+	}
+	.storeName{
+		@include flex(1);
+		display: flex;
+		overflow:hidden;
+		text-align:left;
+		height: 43px;
+		line-height:43px;
+		word-break: break-all;
+		align-items: center;
+		.storeNameText{
+			@include multiLine(1);
+			height: 43px;
+			line-height:43px;
+		}
+		.vipLogoBox{
+			display: flex;
+			flex-shrink: 0;
+			flex-direction: row;
+			justify-content: start;
+			align-items: center;
+			margin-left: rem(20);
+			height: 43px;
+			position: relative;
+			.vipLogo{
+				width: 38px;
+				height: 16px;
+				margin-right: 0;
+			}
+			.vipTextBg {
+				position: relative;
+				height: 16px;
+				width: 42px;
+				background: linear-gradient(to right, #FFEEE2, #F7E5C5);
+				border-top-right-radius: rem(16);
+				border-bottom-right-radius: rem(16);
+			}
+			.vipText{
+				position: absolute;
+				font-size: 12px;
+				height: 19px;
+				line-height: 19px;
+				color: #513B26;
+				transform: scale(0.83) translateY(-60%);
+				left: 45%;
+				top: 50%;
+			}
+			.vipTextBgLong{
+				position: relative;
+				height: 16px;
+				width: 52px;
+				background: linear-gradient(to right, #FFEEE2, #F7E5C5);
+				border-top-right-radius: rem(16);
+				border-bottom-right-radius: rem(16);
+			}
+			.vipTextLong{
+				position: absolute;
+				font-size: 12px;
+				height: 19px;
+				line-height: 19px;
+				color: #513B26;
+				transform: scale(0.83) translateY(-60%);
+				left: 40%;
+				top: 50%;
+			}
+
+		}
+		img{
+			margin-right:10px;
+		}
+	}
+	.openIcon{
+		margin-right: 8px;
+	}
+	.arrowRightIcon{
+		@include requireIcon('../../../img/icon/arrow/arrow-right-s-icon.png',7px, 12px);
+		margin-left:8px;
+		vertical-align:-1px;
+	}
+	.storeEdit {
+		padding-right:5px;
+		span {
+			display: inline-block;
+			width: 40px;
+			height: 16px;
+			line-height: 18px;
+			vertical-align: middle;
+		}
+		.one{
+			color:#ff5555;
+		}
+		.two{
+			border-left: 1px solid #d9d9d9;
+		}
+	}
+}
